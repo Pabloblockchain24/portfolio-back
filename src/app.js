@@ -9,6 +9,7 @@ app.use(express.urlencoded({extended:true}))
 
 const allowedOrigins = [
     'https://portafolio-pablo-arce.vercel.app',
+    'https://portfolio-backend-arce.vercel.app',
     "http://localhost:8080"
 ];
 
@@ -31,5 +32,6 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use("/api", contactRouter)
+app.use("/", (req, res) => res.send("Proyecto corriendo !"))
 
 export default app
