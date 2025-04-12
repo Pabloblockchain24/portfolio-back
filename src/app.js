@@ -10,7 +10,8 @@ app.use(express.urlencoded({extended:true}))
 const allowedOrigins = [
     'https://portafolio-pablo-arce.vercel.app',
     'https://portfolio-backend-arce.vercel.app',
-    "http://localhost:8080"
+    "http://localhost:8080",
+    "http://localhost:5173"
 ];
 
 const corsOptions = {
